@@ -20,7 +20,7 @@ Este proyecto demuestra la implementación de un pipeline de Integración Contin
 5. [Análisis de Dependencias con Snyk](#5-an%C3%A1lisis-de-dependencias-con-snyk)
    - [Configuración](#configuraci%C3%B3n-snyk)
 6. [Análisis Dinámico (DAST) con OWASP ZAP](#6-an%C3%A1lisis-din%C3%A1mico-dast-con-owasp-zap)
-   - [Consideraciones]()
+   - [Consideraciones](#consideraciones)
    - [Configuración en el Pipeline](#configuraci%C3%B3n-en-el-pipeline)
 7. [Tecnologías Utilizadas](#7-tecnolog%C3%ADas-utilizadas)
 8. [Licencia](#8-licencia)
