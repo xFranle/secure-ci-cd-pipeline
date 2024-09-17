@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Este proyecto demuestra la implementación de un pipeline de Integración Continua (CI) seguro utilizando GitHub Actions, integrado con una aplicación web sencilla construida en Flask. El objetivo principal es mostrar cómo integrar herramientas de seguridad en un pipeline CI/CD para automatizar la construcción, pruebas y análisis de seguridad del código antes de su despliegue a producción. Esto asegura que el código sea de alta calidad y esté libre de vulnerabilidades conocidas, manteniendo así la integridad y seguridad de la aplicación.
+Este proyecto demuestra la implementación de un pipeline de Integración Continua (CI) seguro utilizando GitHub Actions, integrado con una aplicación web sencilla construida en Flask. El objetivo principal es mostrar cómo integrar herramientas de seguridad en un pipeline CI para automatizar la construcción, pruebas y análisis de seguridad del código antes de su despliegue a producción. Esto asegura que el código sea de alta calidad y esté libre de vulnerabilidades conocidas, manteniendo así la integridad y seguridad de la aplicación.
 
 ---
 
@@ -13,7 +13,7 @@ Este proyecto demuestra la implementación de un pipeline de Integración Contin
    - [Clonar el Repositorio](#12-clonar-el-repositorio)
    - [Instalar Dependencias](#13-instalar-dependencias)
 2. [Ejecución](#2-ejecuci%C3%B3n)
-3. [Pipeline CI/CD](#3-pipeline-cicd)
+3. [Pipeline CI](#3-pipeline-ci)
    - [Archivo de Configuración del Pipeline](#archivo-de-configuraci%C3%B3n-del-pipeline)
 4. [Análisis Estático (SAST) con SonarCloud](#4-an%C3%A1lisis-est%C3%A1tico-sast-con-sonarcloud)
    - [Configuración](#configuraci%C3%B3n-sonarcloud)
@@ -40,7 +40,7 @@ Sigue los siguientes pasos para configurar el proyecto en tu máquina local.
 ### 1.2 Clonar el Repositorio
 
 ```bash 
-git clone https://github.com/xFranle/secure-ci-cd-pipeline
+git clone https://github.com/xFranle/secure-ci-pipeline
 ```
 
 ### 1.3 Instalar Dependencias
@@ -63,7 +63,7 @@ La aplicación estará disponible en http://localhost:5000.
 ---
 
 ### 3. Pipeline CI
-El proyecto utiliza GitHub Actions para automatizar el pipeline CI/CD, que incluye:
+El proyecto utiliza GitHub Actions para automatizar el pipeline CI, que incluye:
 
 1. Chequeo del Código Fuente: Clona el repositorio y prepara el entorno.
 2. Análisis Estático (SAST) con SonarCloud: Detecta vulnerabilidades y problemas de calidad en el código.
