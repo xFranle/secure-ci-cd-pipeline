@@ -1,8 +1,8 @@
-# Aplicación Flask con Integración de Seguridad en CI/CD
+# Implementación de Pipeline CI/CD Seguro para una Aplicación Flask utilizando GitHub Actions
 
 ## Descripción
 
-Este proyecto es una aplicación web sencilla construida con **Flask**. El objetivo principal es demostrar cómo integrar herramientas de seguridad en un pipeline CI/CD utilizando **GitHub Actions**. El pipeline automatiza la construcción, pruebas y análisis de seguridad del código antes de que llegue a producción, asegurando así que el código sea de alta calidad y esté libre de vulnerabilidades conocidas.
+Este proyecto demuestra la implementación de un pipeline de Integración Continua y Despliegue Continuo (CI/CD) seguro utilizando GitHub Actions, integrado con una aplicación web sencilla construida en Flask. El objetivo principal es mostrar cómo integrar herramientas de seguridad en un pipeline CI/CD para automatizar la construcción, pruebas y análisis de seguridad del código antes de su despliegue a producción. Esto asegura que el código sea de alta calidad y esté libre de vulnerabilidades conocidas, manteniendo así la integridad y seguridad de la aplicación.
 
 ---
 
