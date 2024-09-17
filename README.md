@@ -107,7 +107,6 @@ OWASP ZAP realiza pruebas de seguridad dinámicas en la aplicación en ejecució
 
 Consideraciones
 - Accesibilidad: La aplicación debe estar desplegada y accesible públicamente para que OWASP ZAP pueda realizar el escaneo.
-- Configuración Adicional: Si no tienes un despliegue público, considera configurar un entorno de pruebas o utilizar herramientas de túnel como ngrok.
 #### Configuración en el Pipeline
 En el archivo de configuración, reemplaza 'http://your_app_url' con la URL real de tu aplicación.
 
