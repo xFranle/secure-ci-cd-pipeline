@@ -8,22 +8,22 @@ Este proyecto demuestra la implementación de un pipeline de Integración Contin
 
 ## Tabla de Contenidos
 
-1. [Instalación](#instalación)
-   - [Requisitos Previos](#requisitos-previos)
-   - [Clonar el Repositorio](#clonar-el-repositorio)
-   - [Instalar Dependencias](#instalar-dependencias)
-2. [Ejecución](#ejecución)
-3. [Pipeline CI/CD](#pipeline-cicd)
-   - [Archivo de Configuración del Pipeline](#archivo-de-configuración-del-pipeline)
-4. [Análisis Estático (SAST) con SonarCloud](#análisis-estático-sast-con-sonarcloud)
-   - [Configuración](#configuración-sonarcloud)
-5. [Análisis de Dependencias con Snyk](#análisis-de-dependencias-con-snyk)
-   - [Configuración](#configuración-snyk)
-6. [Análisis Dinámico (DAST) con OWASP ZAP](#análisis-dinámico-dast-con-owasp-zap)
-   - [Consideraciones](#consideraciones)
-   - [Configuración en el Pipeline](#configuración-en-el-pipeline)
-7. [Tecnologías Utilizadas](#tecnologías-utilizadas)
-8. [Licencia](#licencia)
+1. [Instalación](#1-instalaci%C3%B3n)
+   - [Requisitos Previos](#11-requisitos-previos)
+   - [Clonar el Repositorio](#12-clonar-el-repositorio)
+   - [Instalar Dependencias](#13-instalar-dependencias)
+2. [Ejecución](#2-ejecuci%C3%B3n)
+3. [Pipeline CI/CD](#3-pipeline-cicd)
+   - [Archivo de Configuración del Pipeline](#archivo-de-configuraci%C3%B3n-del-pipeline)
+4. [Análisis Estático (SAST) con SonarCloud](#4-an%C3%A1lisis-est%C3%A1tico-sast-con-sonarcloud)
+   - [Configuración](#configuraci%C3%B3n-sonarcloud)
+5. [Análisis de Dependencias con Snyk](#5-an%C3%A1lisis-de-dependencias-con-snyk)
+   - [Configuración](#configuraci%C3%B3n-snyk)
+6. [Análisis Dinámico (DAST) con OWASP ZAP](#6-an%C3%A1lisis-din%C3%A1mico-dast-con-owasp-zap)
+   - [Consideraciones]()
+   - [Configuración en el Pipeline](#configuraci%C3%B3n-en-el-pipeline)
+7. [Tecnologías Utilizadas](#7-tecnolog%C3%ADas-utilizadas)
+8. [Licencia](#8-licencia)
 
 ---
 
@@ -105,7 +105,7 @@ Snyk analiza las dependencias especificadas en requirements.txt para encontrar v
 ### 6. Análisis Dinámico (DAST) con OWASP ZAP
 OWASP ZAP realiza pruebas de seguridad dinámicas en la aplicación en ejecución.
 
-Consideraciones
+#### Consideraciones
 - Accesibilidad: La aplicación debe estar desplegada y accesible públicamente para que OWASP ZAP pueda realizar el escaneo.
 #### Configuración en el Pipeline
 En el archivo de configuración, reemplaza 'http://your_app_url' con la URL real de tu aplicación.
