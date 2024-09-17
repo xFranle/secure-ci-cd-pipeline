@@ -4,6 +4,8 @@
 
 Este proyecto es una aplicación web sencilla construida con **Flask**. El objetivo principal es demostrar cómo integrar herramientas de seguridad en un pipeline CI/CD utilizando **GitHub Actions**. El pipeline automatiza la construcción, pruebas y análisis de seguridad del código antes de que llegue a producción, asegurando así que el código sea de alta calidad y esté libre de vulnerabilidades conocidas.
 
+---
+
 ## Tabla de Contenidos
 
 1. [Instalación](#instalación)
@@ -22,6 +24,8 @@ Este proyecto es una aplicación web sencilla construida con **Flask**. El objet
    - [Configuración en el Pipeline](#configuración-en-el-pipeline)
 7. [Tecnologías Utilizadas](#tecnologías-utilizadas)
 8. [Licencia](#licencia)
+
+---
 
 ## 1. Instalación
 
@@ -46,6 +50,8 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
+---
+
 ### 2. Ejecución
 
 Para ejecutar la aplicación localmente, utiliza el siguiente comando:
@@ -53,6 +59,8 @@ Para ejecutar la aplicación localmente, utiliza el siguiente comando:
 python app.py
 ```
 La aplicación estará disponible en http://localhost:5000.
+
+---
 
 ### 3. Pipeline CI/CD
 El proyecto utiliza GitHub Actions para automatizar el pipeline CI/CD, que incluye:
@@ -67,18 +75,22 @@ El proyecto utiliza GitHub Actions para automatizar el pipeline CI/CD, que inclu
 #### Archivo de Configuración del Pipeline
 El pipeline está definido en el archivo .github/workflows/ci-cd.yml.
 
+---
+
 ### 4. Análisis Estático (SAST) con SonarCloud
 SonarCloud analiza el código fuente para detectar:
 
--Vulnerabilidades de seguridad
--Bugs
--Code Smells
+- Vulnerabilidades de seguridad
+- Bugs
+- Code Smells
 
 #### Configuración SonarCloud
 1. Cuenta en SonarCloud: Regístrate en SonarCloud.
 2. Vinculación con GitHub: Conecta tu cuenta de SonarCloud con GitHub.
 3. Creación del Proyecto: Crea un nuevo proyecto y obtén el projectKey y organization.
 4. Token de Autenticación: Genera un token en SonarCloud y configúralo como SONAR_TOKEN en los secretos del repositorio.
+
+---
 
 ### 5. Análisis de Dependencias con Snyk
 Snyk analiza las dependencias especificadas en requirements.txt para encontrar vulnerabilidades conocidas.
@@ -87,6 +99,8 @@ Snyk analiza las dependencias especificadas en requirements.txt para encontrar v
 1. Cuenta en Snyk: Regístrate en Snyk.
 2. Integración con GitHub: Autoriza a Snyk a acceder a tus repositorios.
 3. Token de Autenticación: Genera un token en Snyk y configúralo como SNYK_TOKEN en los secretos del repositorio.
+
+---
    
 ### 6. Análisis Dinámico (DAST) con OWASP ZAP
 OWASP ZAP realiza pruebas de seguridad dinámicas en la aplicación en ejecución.
@@ -97,13 +111,17 @@ Consideraciones
 #### Configuración en el Pipeline
 En el archivo de configuración, reemplaza 'http://your_app_url' con la URL real de tu aplicación.
 
+---
+
 ### 7. Tecnologías Utilizadas
--Python
--Flask: Microframework web para Python.
--GitHub Actions: Plataforma de CI/CD.
--SonarCloud: Servicio de análisis estático de código.
--Snyk: Herramienta de seguridad para análisis de dependencias.
--OWASP ZAP: Herramienta para pruebas de penetración automatizadas.
+- Python
+- Flask: Microframework web para Python.
+- GitHub Actions: Plataforma de CI/CD.
+- SonarCloud: Servicio de análisis estático de código.
+- Snyk: Herramienta de seguridad para análisis de dependencias.
+- OWASP ZAP: Herramienta para pruebas de penetración automatizadas.
+
+---
 
 ### 8. Licencia
 Este proyecto está bajo la Licencia MIT.
