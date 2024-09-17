@@ -1,8 +1,8 @@
-# Implementación de Pipeline CI/CD Seguro para una Aplicación Flask utilizando GitHub Actions
+# Implementación de Pipeline CI Seguro para una Aplicación Flask utilizando GitHub Actions
 
 ## Descripción
 
-Este proyecto demuestra la implementación de un pipeline de Integración Continua y Despliegue Continuo (CI/CD) seguro utilizando GitHub Actions, integrado con una aplicación web sencilla construida en Flask. El objetivo principal es mostrar cómo integrar herramientas de seguridad en un pipeline CI/CD para automatizar la construcción, pruebas y análisis de seguridad del código antes de su despliegue a producción. Esto asegura que el código sea de alta calidad y esté libre de vulnerabilidades conocidas, manteniendo así la integridad y seguridad de la aplicación.
+Este proyecto demuestra la implementación de un pipeline de Integración Continua (CI) seguro utilizando GitHub Actions, integrado con una aplicación web sencilla construida en Flask. El objetivo principal es mostrar cómo integrar herramientas de seguridad en un pipeline CI/CD para automatizar la construcción, pruebas y análisis de seguridad del código antes de su despliegue a producción. Esto asegura que el código sea de alta calidad y esté libre de vulnerabilidades conocidas, manteniendo así la integridad y seguridad de la aplicación.
 
 ---
 
@@ -62,7 +62,7 @@ La aplicación estará disponible en http://localhost:5000.
 
 ---
 
-### 3. Pipeline CI/CD
+### 3. Pipeline CI
 El proyecto utiliza GitHub Actions para automatizar el pipeline CI/CD, que incluye:
 
 1. Chequeo del Código Fuente: Clona el repositorio y prepara el entorno.
@@ -73,7 +73,7 @@ El proyecto utiliza GitHub Actions para automatizar el pipeline CI/CD, que inclu
 6. Análisis Dinámico (DAST) con OWASP ZAP: Realiza pruebas de penetración automatizadas en la aplicación en ejecución.
 
 #### Archivo de Configuración del Pipeline
-El pipeline está definido en el archivo .github/workflows/ci-cd.yml.
+El pipeline está definido en el archivo .github/workflows/ci.yml.
 
 ---
 
@@ -115,7 +115,7 @@ En el archivo de configuración, reemplaza 'http://your_app_url' con la URL real
 ### 7. Tecnologías Utilizadas
 - Python
 - Flask: Microframework web para Python.
-- GitHub Actions: Plataforma de CI/CD.
+- GitHub Actions
 - SonarCloud: Servicio de análisis estático de código.
 - Snyk: Herramienta de seguridad para análisis de dependencias.
 - OWASP ZAP: Herramienta para pruebas de penetración automatizadas.
