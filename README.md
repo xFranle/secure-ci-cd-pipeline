@@ -35,5 +35,20 @@ Sigue los siguientes pasos para configurar el proyecto en tu máquina local.
 
 ### 1.2 Clonar el Repositorio
 
-```bash
+```bash 
 git clone https://github.com/xFranle/secure-ci-cd-pipeline
+```
+
+### 1.3 Instalar Dependencias
+
+```bash 
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+### 2. Ejecución
+
+Para ejecutar la aplicación localmente, utiliza el siguiente comando:
+```bash 
+python app.py
+```
