@@ -52,3 +52,17 @@ Para ejecutar la aplicación localmente, utiliza el siguiente comando:
 ```bash 
 python app.py
 ```
+La aplicación estará disponible en http://localhost:5000.
+
+### 3. Pipeline CI/CD
+El proyecto utiliza GitHub Actions para automatizar el pipeline CI/CD, que incluye:
+
+1. Chequeo del Código Fuente: Clona el repositorio y prepara el entorno.
+2. Análisis Estático (SAST) con SonarCloud: Detecta vulnerabilidades y problemas de calidad en el código.
+3. Instalación de Dependencias: Instala las dependencias especificadas en requirements.txt.
+4. Análisis de Dependencias con Snyk: Identifica vulnerabilidades en las dependencias del proyecto.
+5. Ejecución de Pruebas Unitarias: Verifica que la aplicación funcione como se espera.
+6. Análisis Dinámico (DAST) con OWASP ZAP: Realiza pruebas de penetración automatizadas en la aplicación en ejecución.
+
+#### Archivo de Configuración del Pipeline
+El pipeline está definido en el archivo .github/workflows/ci-cd.yml.
