@@ -66,3 +66,44 @@ El proyecto utiliza GitHub Actions para automatizar el pipeline CI/CD, que inclu
 
 #### Archivo de Configuración del Pipeline
 El pipeline está definido en el archivo .github/workflows/ci-cd.yml.
+
+### 4. Análisis Estático (SAST) con SonarCloud
+SonarCloud analiza el código fuente para detectar:
+
+-Vulnerabilidades de seguridad
+-Bugs
+-Code Smells
+
+#### Configuración SonarCloud
+1. Cuenta en SonarCloud: Regístrate en SonarCloud.
+2. Vinculación con GitHub: Conecta tu cuenta de SonarCloud con GitHub.
+3. Creación del Proyecto: Crea un nuevo proyecto y obtén el projectKey y organization.
+4. Token de Autenticación: Genera un token en SonarCloud y configúralo como SONAR_TOKEN en los secretos del repositorio.
+
+### 5. Análisis de Dependencias con Snyk
+Snyk analiza las dependencias especificadas en requirements.txt para encontrar vulnerabilidades conocidas.
+
+#### Configuración Snyk
+1. Cuenta en Snyk: Regístrate en Snyk.
+2. Integración con GitHub: Autoriza a Snyk a acceder a tus repositorios.
+3. Token de Autenticación: Genera un token en Snyk y configúralo como SNYK_TOKEN en los secretos del repositorio.
+   
+### 6. Análisis Dinámico (DAST) con OWASP ZAP
+OWASP ZAP realiza pruebas de seguridad dinámicas en la aplicación en ejecución.
+
+Consideraciones
+-Accesibilidad: La aplicación debe estar desplegada y accesible públicamente para que OWASP ZAP pueda realizar el escaneo.
+-Configuración Adicional: Si no tienes un despliegue público, considera configurar un entorno de pruebas o utilizar herramientas de túnel como ngrok.
+#### Configuración en el Pipeline
+En el archivo de configuración, reemplaza 'http://your_app_url' con la URL real de tu aplicación.
+
+### 7. Tecnologías Utilizadas
+-Python
+-Flask: Microframework web para Python.
+-GitHub Actions: Plataforma de CI/CD.
+-SonarCloud: Servicio de análisis estático de código.
+-Snyk: Herramienta de seguridad para análisis de dependencias.
+-OWASP ZAP: Herramienta para pruebas de penetración automatizadas.
+
+### 8. Licencia
+Este proyecto está bajo la Licencia MIT.
