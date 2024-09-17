@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Este proyecto demuestra la implementación de un pipeline de Integración Continua (CI) seguro utilizando GitHub Actions, integrado con una aplicación web sencilla construida en Flask. El objetivo principal es mostrar cómo integrar herramientas de seguridad en un pipeline CI para automatizar la construcción, pruebas y análisis de seguridad del código antes de su despliegue a producción. Esto asegura que el código sea de alta calidad y esté libre de vulnerabilidades conocidas, manteniendo así la integridad y seguridad de la aplicación.
+Este proyecto demuestra la implementación de un pipeline de Integración Continua (CI) seguro utilizando GitHub Actions, integrado con una aplicación web sencilla construida en Flask. El objetivo principal es mostrar cómo integrar herramientas de seguridad en un pipeline CI para automatizar la construcción, pruebas y análisis de seguridad del código. Esto asegura que el código sea de alta calidad y esté libre de vulnerabilidades conocidas, manteniendo así la integridad y seguridad de la aplicación.
 
 ---
 
